@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import {
   BrowserRouter,
   Routes,
@@ -14,7 +14,10 @@ import Result from "./Components/Result";
 
 function App() {
   
-  
+  useEffect(()=>{
+    
+     localStorage.clear();
+  },[])
   
   
   return (

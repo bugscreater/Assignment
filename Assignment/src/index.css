@@ -34,7 +34,7 @@ code {
   flex-direction: column;
   width: 100%;
   max-width: 300px;
-  width: 200px;
+  width: 230px;
   background-color: #313131;
   padding: 20px;
 }
@@ -82,9 +82,9 @@ code {
 }
 
 .header{
-  font-size: 20px;
+  font-size: 30px;
   background-color: #313131;
   color: #F3F3F3;
   height: 50px;
-  padding: 3px;
+  padding:  10px 10px;
 }

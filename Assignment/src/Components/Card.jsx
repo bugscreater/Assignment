@@ -7,13 +7,33 @@ function Card(props) {
    
    
     const dragStart = e =>{
+        let prev_card_id = localStorage.getItem("selected_card");
+        let prev_card = document.getElementById(prev_card_id);
+       
+        setTimeout(()=>{
+          prev_card.style.display = "block";
+        
+        },100);
+       
+        localStorage.clear();
+        
         const target = e.target;
         e.dataTransfer.setData('card_id',target.id);
-        props.setTag(props.value);
-        // setTimeout(()=>{
-        //     target.style.fontSize = "30px";
+        
+        
+        
+        setTimeout(()=>{
+          props.setTag(props.value);
+        
+        },100);
+        
+        setTimeout(()=>{
+            target.style.display = "none";
           
-        // },0);
+        },100);
+       
+        localStorage.setItem("selected_card",target.id);
+       
     }
     
 

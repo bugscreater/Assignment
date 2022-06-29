@@ -54,7 +54,7 @@ function Content() {
      
       <div>
         <header>
-            <h2 className="header">Select Markup</h2>
+            <h2 className="header">Select Tag</h2>
         </header>
 
         <main className="flexbox">

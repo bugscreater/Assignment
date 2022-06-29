@@ -1,13 +1,14 @@
 import React,{useState,useEffect} from 'react'
 
-function TextEditor({value,Addcontent,submit}) {
+function TextEditor({value,Addcontent,submit,result}) {
 
   
   const [text,setText] = useState("");
   
   
+  
   function settext(e){
-       Addcontent(e.target.value)
+       Addcontent(e.target.value);
        setText(e.target.value);
     
   }
@@ -31,6 +32,8 @@ function TextEditor({value,Addcontent,submit}) {
      
       </textarea>
       <button onClick={formsubmit} className = "btn">Submit</button>
+      <br />
+      <div>{result}</div>
       
 
     
